@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #d4af37; /* Gold-like color */
+    --secondary-color: #333333; /* Dark text color */
+    --light-bg: #fd3b00; /* Light background for contrast */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --font-family: 'Arial', sans-serif; /* Use a clean font */
+}
+
+/* General styles */
+body {
+    background-color: rgb(247, 211, 8);
+    font-family: var(--font-family);
+}
+
+/* Home page heading */
+h2.text-primary {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Container for the carousel */
+.container {
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+/* Carousel styles */
+.carousel {
+    width: 100%;
+   height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+
+
+
+.carousel img {
+    transition: transform 0.5s ease; /* Smooth image transition */
+   
+    
+}
+
+.carousel img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    transition: color 0.3s ease; /* Color transition */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Paragraph below the carousel */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 12px 0;
+    color: cadetblue;
+    text-align: justify;
+    padding: 0 10px;
+    font-family: fangsong;
+}
+
+/* Horizontal rule styling */
+hr {
+    margin: 40px 0;
+    border-color: var(--primary-color);
+}
+
+/* Button styles */
+button.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+button.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h2.text-primary {
+        font-size: 2rem; /* Adjust heading size */
+    }
+    
+    .carousel-caption h3 {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Smaller paragraph on mobile */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+}

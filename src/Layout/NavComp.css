@@ -1,0 +1,39 @@
+/* NavComp.css */
+
+/* General styles for the navigation container */
+.nav-container {
+    display: flex;               /* Flexbox for layout */
+    justify-content: center;     /* Center the buttons */
+    padding: 20px;              /* Padding around the buttons */
+    background-color: #f8f9fa;  /* Light background for contrast */
+}
+
+/* Style for buttons */
+.btn-primary {
+    background-color: #d4af37; /* Gold-like color */
+    border: none;              /* Remove default border */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 10px 15px;       /* Padding inside the button */
+    font-size: 1rem;          /* Font size */
+    margin: 0 10px;           /* Margin between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover {
+    background-color: #b38e2d; /* Darker shade on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Responsive styles for buttons */
+@media (max-width: 768px) {
+    .btn-primary {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+        padding: 8px 12px; /* Adjust padding on mobile */
+    }
+}
+
+
+.navbutton{
+    margin-top: 5px;
+}

@@ -1,0 +1,26 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards to next line if container width is small */
+    gap: 20px; /* Spacing between cards */
+    justify-content: center; /* Center the cards horizontally */
+    margin-top: 20px;
+  }
+  
+  .card {
+    flex: 1 1 18rem; /* Ensure cards take up equal width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    
+    /* Removing the border */
+    border: none !important;
+    border-radius: var(--bs-card-border-radius);
+
+  }
+  
